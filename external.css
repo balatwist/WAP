@@ -1,0 +1,18 @@
+header{
+    color: coral;
+    text-align: center;
+}
+
+body{
+    color: green;
+    font-family: Verdana;
+    font-style: italic;
+}
+#description{
+    text-align: center;
+}
+#img{
+    display: flex;
+    align-content: flex-end;
+    background-color: coral;
+}
