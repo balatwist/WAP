@@ -1,0 +1,76 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <title>LAB4</title>
+    
+</head>
+<body >
+    <header style="color: white;">
+        <nav class="navbar bg-body-tertiary" style="background-color: rgb(16, 159, 254); padding-bottom: 20px ; text-align: center;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+            </div>
+          </nav>
+    </header>
+    
+      
+      
+    
+
+      <h2 style="display: flex; padding: 20px 80px; font-weight:200; font-size: xx-large;"  >New Product Form</h2>
+
+      <div style="display: flex; padding: 5px 100px;"> 
+
+        <form class="row g-3">
+            <div class="col-md-6">
+              <label for="Product Number" class="form-label">Product Number</label>
+              <input type="text"  class="form-control form-control-lg " id="Product Number">
+            </div>
+            <div class="col-md-6">
+              <label for="quantity" class="form-label">Quantity in Stock</label>
+              <input type="text"  class="form-control form-control-lg"  id="quantity" placeholder="0">
+            </div>
+            <div class="col-md-6">
+              <label for="Name" class="form-label">Name</label>
+              <input type="text" class="form-control form-control-lg"  id="Name" >
+            </div>
+            <div class="col-md-6">
+              <label for="Supplier" class="form-label " >Supplier</label>
+              <select class="form-select " aria-label="Default select example" style="padding-top: 10px ; padding-bottom: 11px;">
+                <option selected>Select a supplier</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="price" class="form-label">Unit Price</label>
+              <input type="text" class="form-control form-control-lg " id="price" placeholder="0.0">
+            </div>
+            <div class="col-md-6">
+                <label for="date" class="form-label">Date supplied</label>
+                <input type="date" class="form-control form-control-lg"  id="date">
+              </div>
+              </div>
+            </div>
+    
+            
+<div style="display: inline;  padding-right: 100px; padding-top: 50px; float: right;">
+    <button type="reset" class="btn btn-outline-dark btn-lg " style="margin-right: 30px; border: 2px solid rgb(22, 22, 82);">Reset</button>
+    
+    <button type="submit" class="btn btn-outline-danger btn-lg  " style="margin-right: 30px; border: 2px solid rgb(255, 115, 0);">Cancel</button>
+
+    <button type="submit" class="btn btn-outline-info btn-lg " style="border: 2px solid " >Add Product</button>
+  
+</div>
+           
+          </form>
+          
+            
+    </div>
+
+
+     
+   
+</body>

@@ -1,0 +1,33 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <title>LAB4</title>
+    
+</head>
+<body>
+    <div id="form1">
+        <form id="frm" action="">
+            <div class="mb-3">
+                <label for="url">Website URL</label>
+                <input type="text" name="url" placeholder="Website URL" class="form-control" required pattern="https?://.+" >
+            </div>
+            <div class="mb-3">
+                <label for="fname">Firstname</label>
+                <input type="text" name="fname" placeholder="Firstname" class="form-control" required pattern="[A-Z][a-z]{1,}">
+            </div>
+            <div class="mb-3">
+                <label for="email">Email address </label>
+                <input type="text" name="email" placeholder="Enter Email " class="form-control" >
+            </div>
+            <div class="mb-3">
+                <label for="password">Password</label>
+                <input type="text" name="password" placeholder="Password" class="form-control"  required minlength="10">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+    </div>
+       
+    
+</body>
