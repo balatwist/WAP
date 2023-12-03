@@ -108,4 +108,5 @@ function printFibo(n, a, b) {
   console.log(fiboSeq.join(', '));
 }
 printFibo(6, 0, 1);
+//
 
