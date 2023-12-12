@@ -35,4 +35,5 @@ Rabbit.prototype.hide = function() {
 let rabbit1=new Rabbit("bunny");
 
 rabbit1.hide();
+rabbit1.run(5);
 

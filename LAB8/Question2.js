@@ -20,6 +20,7 @@ Student.prototype.computeAverageGrade=function(){
 let Student1=new Student("Jonny","Walker");
 Student1.insertGrade(90);
 Student1.insertGrade(85);
+Student1.insertGrade(99);
 
 console.log(Student1.computeAverageGrade())
 

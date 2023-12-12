@@ -1,0 +1,38 @@
+class Student{
+
+     
+
+constructor(studentId){
+        this.studentId=studentId;
+        this.answers=[];
+    }
+
+
+addAnswer(questions,answer){
+
+Student.answers.push(questions);
+
+    }
+
+
+}
+
+
+
+class Question {
+
+    constructor(qid,correctAnswer){
+        this.id=id;
+       this.correctAnswer=correctAnswer;
+
+    }
+
+checkAnswer(studentAnswer){
+
+if(this.correctAnswer==this.correctAnswer )
+
+    return true;
+
+}
+
+}
