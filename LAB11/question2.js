@@ -1,4 +1,4 @@
-const http = require('http');
+ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
@@ -9,51 +9,28 @@ const server = http.createServer((request, response) => {
         response.end("Welcome to my website");
     } else if (url.toLowerCase() === '/image') {
        
-        const imagePath = path.join(__dirname, 'dog.jpeg');
-        
+         const imagePath = path.join(__dirname, 'dog.jpeg');
+         const imageStream = fs.createReadStream(imagePath);
+ 
+         
+         response.setHeader('Content-Type', 'image/jpeg');
+
+         imageStream.pipe(response);
        
-        if (fs.existsSync(imagePath)) {
-            const imageStream = fs.createReadStream(imagePath);
-
-            
-            response.setHeader('Content-Type', 'image/jpeg');
-
-          
-            imageStream.on('error', (error) => {
-                console.error(error);
-                response.writeHead(500);
-                response.end("Internal Server Error");
-            });
-
-           
-            imageStream.pipe(response);
-        } else {
-            response.writeHead(404);
-            response.end("Error 404: Image not found");
-        }
+        
+        
     } else if (url.toLowerCase() === '/pdf') {
        
-        const pdfPath = path.join(__dirname, 'file.pdf');
 
-     
-        if (fs.existsSync(pdfPath)) {
-            const pdfStream = fs.createReadStream(pdfPath);
+        const imagePath = path.join(__dirname, 'file.jpeg');
+        const imageStream = fs.createReadStream(imagePath);
 
-            response.setHeader('Content-Type', 'application/pdf');
+        
+        response.setHeader('Content-Type', 'application/pdf');
 
-           
-            pdfStream.on('error', (error) => {
-                console.error(error);
-                response.writeHead(500);
-                response.end("Internal Server Error");
-            });
-
-            
-            pdfStream.pipe(response);
-        } else {
-            response.writeHead(404);
-            response.end("Error 404: PDF file not found");
-        }
+        imageStream.pipe(response);
+      
+        
     } else {
         response.writeHead(404);
         response.end("Error 404: Page not found");
