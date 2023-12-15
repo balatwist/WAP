@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-  // Handle POST request for products
+
   const product = req.body;
   res.send(`POST /products - Product: ${JSON.stringify(product)}`);
 });
