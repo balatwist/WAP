@@ -5,8 +5,8 @@ const port = 3000;
 app.use(express.json()); // Middleware to parse JSON requests
 
 // Routes
-app.use('/users', require('./routes/users'));
-app.use('/products', require('./routes/products'));
+app.use('/users', require('./users'));
+app.use('/products', require('./products'));
 
 // Custom 404 page
 app.use((req, res, next) => {
